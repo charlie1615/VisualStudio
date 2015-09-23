@@ -26,7 +26,7 @@ namespace GestorAlumnos
         {
             switch (opcion)
             {               
-                case 1:
+                case 1: 
                     {
                         MostrarAlumnos();
                         //Console.WriteLine("As elejido mostrar alumnos:");
