@@ -34,6 +34,7 @@ namespace GestorAlumnos
                     }
                 case 2:
                     {
+                        AddAlumno();
                         //Console.WriteLine("As elejido añadir alumno:");
                         break;
                     }
@@ -48,6 +49,21 @@ namespace GestorAlumnos
         private static void AddAlumno()
         {
             Alumno al = new Alumno();
+            Alumno al2 = null;
+
+            string nombre = "", apellidos = "";
+            Console.Clear();
+
+            Console.WriteLine("Introduzca su nombre: ");
+            nombre = Console.ReadLine();
+            Console.WriteLine("Introduzca sus apellidos: ");
+            apellidos = Console.ReadLine();
+
+            
+            al.Nombre = nombre;
+            al.Apellidos = apellidos;
+
+            al2 = new Alumno(nombre, apellidos);
             fa.AddAlumno(al);
         }
         // Mostrar alumnos
